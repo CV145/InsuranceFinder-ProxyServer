@@ -5,7 +5,6 @@ const router = express.Router();
 let fetch;
 
 const apikey = process.env.MARKETPLACE_API_KEY;
-const apikey = 'U52FZtIuwfk0nLf3dIXiZV5js6OQCSHh'; // Your API key
 
 (async () => {
     fetch = (await import('node-fetch')).default;
