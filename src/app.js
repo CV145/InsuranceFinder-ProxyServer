@@ -13,4 +13,8 @@ app.use(cors({
 app.use(express.json());
 app.use('/api', apiProxyRoutes);
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 module.exports = app;

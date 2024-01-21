@@ -10,9 +10,7 @@ const apikey = process.env.MARKETPLACE_API_KEY;
     fetch = (await import('node-fetch')).default;
 })();
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-});
+
 
 
 //Response: Marketplace API search results
