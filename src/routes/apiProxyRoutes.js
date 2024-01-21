@@ -10,6 +10,11 @@ const apikey = process.env.MARKETPLACE_API_KEY;
     fetch = (await import('node-fetch')).default;
 })();
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+
 //Response: Marketplace API search results
 router.post('/plans/search', async (req, res) => {
     const marketplaceApiUrl = `https://marketplace.api.healthcare.gov/api/v1/plans/search`;
