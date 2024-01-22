@@ -1,6 +1,6 @@
 //Routes the frontend will call
 
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 let fetch;
 
@@ -112,4 +112,4 @@ router.get('/plandetails/:planId/:year', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;

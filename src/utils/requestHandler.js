@@ -1,6 +1,6 @@
 //logic for handling requests to external API
 
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 const getExternalApiData = async (req, res) => {
     try {
@@ -12,6 +12,4 @@ const getExternalApiData = async (req, res) => {
     }
 };
 
-module.exports = {
-    getExternalApiData,
-};
+export default getExternalApiData;
