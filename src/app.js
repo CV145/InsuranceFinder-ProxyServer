@@ -6,11 +6,9 @@ const apiProxyRoutes = require('./routes/apiProxyRoutes');
 const app = express();
 
 // Enable CORS for your frontend origin
-/*app.use(cors({
-    origin: 'http://localhost:5173' // Replace with your frontend's origin
-}));*/
-
-app.use(cors());
+app.use(cors({
+    origin: 'https://cv145.github.io'
+}));
 
 
 app.use(express.json());
