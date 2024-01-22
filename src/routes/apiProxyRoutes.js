@@ -2,13 +2,9 @@
 
 import express from 'express';
 const router = express.Router();
-let fetch;
+import fetch from 'node-fetch';
 
 const apikey = process.env.MARKETPLACE_API_KEY;
-
-(async () => {
-    fetch = (await import('node-fetch')).default;
-})();
 
 
 router.get('/test', (req, res) => {
