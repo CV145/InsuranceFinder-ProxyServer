@@ -11,6 +11,9 @@ const apikey = process.env.MARKETPLACE_API_KEY;
 })();
 
 
+router.get('/test', (req, res) => {
+    res.send('API Proxy Test Route Working');
+});
 
 
 //Response: Marketplace API search results
