@@ -7,7 +7,7 @@ const app = express();
 
 // Enable CORS for your frontend origin
 app.use(cors({
-    origin: 'https://cv145.github.io'
+    origin: ['https://cv145.github.io', 'http://localhost:5173']
 }));
 
 
