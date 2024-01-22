@@ -17,7 +17,19 @@ app.use(express.json());
 app.use('/api', apiProxyRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send(`
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Hello World</title>
+            </head>
+            <body>
+                <h1>Hello World!</h1>
+                <p>This is a simple HTML response from the server.</p>
+            </body>
+        </html>
+    `);
 });
+
 
 module.exports = app;
